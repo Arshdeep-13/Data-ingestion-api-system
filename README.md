@@ -112,7 +112,7 @@ Response:
 
 ## 🧪 Running Tests
 
-Add your tests using Jest or Supertest:
+Add your tests using Postman:
 
 ```bash
 npm test
@@ -124,13 +124,13 @@ Or test endpoints using Postman or curl.
 ```bash
 # Ingest request
 
-curl -X POST http://localhost:5000/ingest \
+curl -X POST http://localhost:8000/ingest \
 -H "Content-Type: application/json" \
 -d '{"ids": [1, 2, 3, 4, 5], "priority": "HIGH"}'
 
 # Status check
 
-curl http://localhost:5000/status/abc123
+curl http://localhost:8000/status/abc123
 ```
 
 ✍️ Author
